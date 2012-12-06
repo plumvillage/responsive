@@ -34,8 +34,6 @@ if ( !defined('ABSPATH')) exit;
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
-
 <script type="text/javascript">  
 			
 			jQuery(function($){
