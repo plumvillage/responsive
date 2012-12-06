@@ -34,6 +34,53 @@ if ( !defined('ABSPATH')) exit;
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+
+<script type="text/javascript">  
+			
+			jQuery(function($){
+				
+				$('.circle').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});
+				
+				$('.fade').mosaic();
+				
+				$('.bar').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar2').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar3').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top'		//Vertical anchor position
+				});
+				
+				$('.cover').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px'		//Horizontal position on hover
+				});
+				
+				$('.cover2').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top',		//Vertical anchor position
+					hover_y		:	'80px'		//Vertical position on hover
+				});
+				
+				$('.cover3').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px',	//Horizontal position on hover
+					hover_y		:	'300px'		//Vertical position on hover
+				});
+		    
+		    });
+		    
+		</script>
+
+
 <?php wp_enqueue_style('responsive-style', get_stylesheet_uri(), false, '1.8.4');?>
 
 <?php wp_head(); ?>
