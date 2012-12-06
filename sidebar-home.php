@@ -19,15 +19,19 @@ if ( !defined('ABSPATH')) exit;
  */
 ?>  
     <div id="widgets" class="home-widgets">
-        <div class="grid col-300">
+        <div class="grid col-300 mosaic-block bar2">
         <?php responsive_widgets(); // above widgets hook ?>
             
             <?php if (!dynamic_sidebar('home-widget-1')) : ?>
             <div class="widget-wrapper">
-            
-                <div class="widget-title-home"><h3><?php _e('Home Widget 1', 'responsive'); ?></h3></div>
-                <div class="textwidget"><?php _e('This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area six called Home Widget 1. Title is also manageable from widgets as well.','responsive'); ?></div>
-            
+              <a href="mindfulness" target="_blank" class="mosaic-overlay">
+                <div class="details">
+                    <h3>What is Mindfulness?</h3>
+                    <p>Find out more about the practice of awakening in daily life</p>
+                </div>
+              </a>
+    
+              <div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/desroches.jpg"/></div>
 			</div><!-- end of .widget-wrapper -->
 			<?php endif; //end of home-widget-1 ?>
 
